@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            background-color: blue;
+        }
+        p::first-letter{
+            background-color: rgb(0, 255, 55);
+        }
+        h1::before{
+            content:url('https://tse2.mm.bing.net/th?id=OIP.DpcLyyRCeTWoiiMNdCTXxQHaEK&pid=Api&P=0&h=180')
+        }
+        h1::after{
+            content:url('https://tse2.mm.bing.net/th?id=OIP.DpcLyyRCeTWoiiMNdCTXxQHaEK&pid=Api&P=0&h=180')
+        }
+        ::marker{
+        color: rgb(0, 255, 55);
+        content: "(" counter(section, lower-alpha) ") ";
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Dolorum animi voluptatibus ipsum quae ullam omnis voluptatem, <br>mollitia laboriosam iure laborum architecto voluptate id odio, eveniet asperiores, dolores est tempora et?</p>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ol>
+</body>
+</html>
